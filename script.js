@@ -11,11 +11,18 @@ if (Number(guess) === secretNumber) {
 	alert("YOU GOT IT RIGHT!");
 }
 
-//otherwise you got it wrong
+
+//check if guess is higher
+
+else if (Number(guess) > secretNumber) {
+	alert ("Too high. Guess Again!");
+}
 
 
-else { 
-	alert ("You got it wrong");
+//check if guess is lower
+
+else if (Number(guess) < secretNumber) {
+	alert("Too low. Guess Again!");
 }
 
 
